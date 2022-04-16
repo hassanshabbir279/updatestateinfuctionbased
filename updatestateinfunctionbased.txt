@@ -1,0 +1,20 @@
+import React, { useState } from 'react'
+
+const UpdateState = () => {
+  const [state , setState] = useState(0)
+
+  const update = () => {
+     setState(state+1)
+  }
+
+  return (
+    <>
+      <h1>Hello World</h1>
+
+      <h2>My State = {state}</h2>
+      <button onClick={update}>Update State</button>
+    </>
+  )
+}
+
+export default UpdateState
